@@ -2,17 +2,38 @@
 <html>
 <head>
      <title>sashas page</title>
+
 </head>
 <body>
-    <h1>I really really want to sleep</h1>
+	<center>
+    <h1 id="D">I really really want to sleep</h1>
     <h2>But I need to study CS</h2>
     <p>sleep is really really importent</p>
-    <button onclick="onclick()">click me</button>
+    <button id = "idd" onclick = 'myFunction()'>motivation button</button>
+    <marquee behavior="alternate" direction="right">
+    <img src="https://o.remove.bg/downloads/27bf0106-2d09-4f47-b721-868b87f6b6ab/little-boy-sleeping_1308-16729-removebg-preview.png"  width="400px" height="200px">
+    </marquee>
+    <marquee  behavior="alternate" direction="left">
+    	<img src="https://o.remove.bg/downloads/ae81f676-08d4-46a4-8b99-f61b3c970aa3/5ce30d498c84d918b95905f832da6583-removebg-preview.png"  width="400px" height="200px">
+    </marquee>
+    <a href = "https://en.wikipedia.org/wiki/Sleep#:~:text=Sleep%20is%20a%20state%20of,surrounding%20environment%20are%20significantly%20reduced."> Wikipedia </a>
+    </center>
+
 </body>
 <script type="text/javascript">
-     document.getElementsByTagName('title')[0].innerHTML = "I want to sleep"
-     function onclick() {
-     	document.getElementsByTagName('h1')[0].innerHTML = "DO YOUR CS LAB!!!!"   
-      }
+  document.getElementsByTagName('html')[0].style.backgroundColor = 'lightseagreen';
+  document.getElementsByTagName('title')[0].innerHTML = "I want to sleep";
+  document.getElementById("idd").style.fontFamily = 'Fantasy';
+  function myFunction() {
+    document.getElementById("D").innerHTML = "GO FINISH YOUR CS LAB!!!!";
+    document.getElementsByTagName("h2")[0].innerHTML = "FASTER!!!!";
+    document.getElementsByTagName("p")[0].innerHTML = "WHY ARE YOU STILL HERE????"
+    document.getElementsByTagName("img")[0].src = "https://png.pngtree.com/png-clipart/20230413/original/pngtree-computer-science-flat-icon-png-image_9052360.png"
+    document.getElementsByTagName("img")[0].width = "200"
+    document.getElementsByTagName("img")[1].src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
+    document.getElementsByTagName("img")[1].width = "200"
+    document.getElementsByTagName('title')[0].innerHTML = "CS IS IMPORTANT!!!!";
+
+}
 </script>
 </html>
