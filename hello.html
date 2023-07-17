@@ -2,28 +2,35 @@
 <html>
 <head>
      <title>sashas page</title>
+     <script src = "main.js"></script>
 
 </head>
-<body>
+<body id = "body">
 	<center>
-    <h1 id="D">I really really want to sleep</h1>
-    <h2>But I need to study CS</h2>
-    <p>sleep is really really importent</p>
-    <button id = "idd" onclick = 'myFunction()'>motivation button</button>
+    <h1 id="D" class="words">I really really want to sleep</h1>
+    <h2 class="words">But I need to study CS</h2>
+    <p class="words">sleep is really really importent</p>
+    <button id = "idd" onclick = 'myFunction()' >motivation button</button>
+    <button onclick = 'changeColor("yellow")' >CHANGE YOUR BG COLOR!!</button>
     <marquee behavior="alternate" direction="right">
-    <img src="https://o.remove.bg/downloads/27bf0106-2d09-4f47-b721-868b87f6b6ab/little-boy-sleeping_1308-16729-removebg-preview.png"  width="400px" height="200px">
+    <img src="https://o.remove.bg/downloads/cba05039-009d-456f-a99d-a94690778fff/image-removebg-preview.png"  width="200px" height="200px">
     </marquee>
     <marquee  behavior="alternate" direction="left">
-    	<img src="https://o.remove.bg/downloads/ae81f676-08d4-46a4-8b99-f61b3c970aa3/5ce30d498c84d918b95905f832da6583-removebg-preview.png"  width="400px" height="200px">
+    <img src="https://o.remove.bg/downloads/467c4d92-7f26-422f-a975-bbb13bb732a4/pngtree-little-teenager-sleeping-clipart-png-image_2408993-removebg-preview.png"  width="200px" height="200px">
     </marquee>
-    <a href = "https://en.wikipedia.org/wiki/Sleep#:~:text=Sleep%20is%20a%20state%20of,surrounding%20environment%20are%20significantly%20reduced."> Wikipedia </a>
+    <a class="words" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Wikipedia </a>
     </center>
 
 </body>
 <script type="text/javascript">
   document.getElementsByTagName('html')[0].style.backgroundColor = 'lightseagreen';
   document.getElementsByTagName('title')[0].innerHTML = "I want to sleep";
-  document.getElementById("idd").style.fontFamily = 'Fantasy';
+  document.getElementById("idd").style.fontFamily = 'Cursive';
+  document.getElementsByClassName('words')[0].style.color = 'red';
+  document.getElementsByClassName('words')[1].style.color = 'red';
+  document.getElementsByClassName('words')[2].style.color = 'red';
+  document.getElementById('idd').style.color = "red"
+  document.getElementsByTagName('button')[1].style.display = 'none'
   function myFunction() {
     document.getElementById("D").innerHTML = "GO FINISH YOUR CS LAB!!!!";
     document.getElementsByTagName("h2")[0].innerHTML = "FASTER!!!!";
@@ -33,6 +40,9 @@
     document.getElementsByTagName("img")[1].src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
     document.getElementsByTagName("img")[1].width = "200"
     document.getElementsByTagName('title')[0].innerHTML = "CS IS IMPORTANT!!!!";
+    document.getElementById("idd").style.display = 'none'
+    document.getElementsByTagName('button')[1].style.display = 'inline';
+    document.getElementsByTagName('button')[1].style.color = 'red'
 
 }
 </script>
